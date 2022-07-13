@@ -1,0 +1,6 @@
+{
+    "require": {
+        "nox7/nox": "2.0.0beta-12"
+    },
+    "minimum-stability": "beta"
+}
