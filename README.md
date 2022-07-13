@@ -1,6 +1,8 @@
 # Discord Server Insights Visualizer
 A small PHP web app to help compile Discord Insights CSV exports of visitors and message activity into graphical data - helps geta round their minimal-length data retention for longer analytical views.
 
+![image](https://user-images.githubusercontent.com/17110935/178847883-4d3ac3d3-2248-4918-aa29-46a905ff3555.png)
+
 ## Usage
 After cloning this repo to your local machine, you'll need to install the dependencies via composer.
 ```
