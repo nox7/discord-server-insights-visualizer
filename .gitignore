@@ -1,0 +1,4 @@
+/vendor*
+/app/nox-env.php
+/app/resources/insights-exports/*
+!/app/resources/insights-exports/.gitkeep
