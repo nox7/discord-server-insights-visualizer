@@ -3,15 +3,12 @@ import VisitorsChart from "../components/VisitorsChart.js";
 
 class DateSelectionForm{
 	form = document.querySelector("#date-selection-form");
-	previousPeriodCheck = document.querySelector("#compare-previous-period-input");
+	// previousPeriodCheck = document.querySelector("#compare-previous-period-input");
 	isProcessing = false;
 
 	constructor() {
 		this.form.addEventListener("submit", e => {
-			this.onSubmit();
-		});
-
-		this.previousPeriodCheck.addEventListener("change", () => {
+			e.preventDefault();
 			this.onSubmit();
 		});
 	}
@@ -27,9 +24,10 @@ class DateSelectionForm{
 
 		// Providing a FormData is actually fine here
 		const urlSearchParams = new URLSearchParams(fData);
-
-		MessageActivityChart.fetchAndRender(urlSearchParams);
-		VisitorsChart.fetchAndRender(urlSearchParams);
+		await Promise.all([
+			MessageActivityChart.fetchAndRender(urlSearchParams),
+			VisitorsChart.fetchAndRender(urlSearchParams)
+		]);
 
 		this.isProcessing = false;
 	}

@@ -1,6 +1,12 @@
 @import "../bootstrap/functions";
 @import "../bootstrap/variables";
 
+$custom-theme-colors:(
+	primary:#1b2e4a,
+);
+
+$theme-colors:map-merge($theme-colors, $custom-theme-colors);
+
 @import "../bootstrap/bootstrap";
 @import "home/main";
 @import "header/main";

@@ -48,6 +48,11 @@
 								</div>
 							</div>
 						</div>
+						<div class="mt-3">
+							<button type="submit" class="btn btn-primary btn-sm">
+								<span>Update Graphs</span>
+							</button>
+						</div>
 					</form>
 				</div>
 			</div>
