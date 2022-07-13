@@ -1,4 +1,4 @@
-# Discord Service Insights Visualier
+# Discord Server Insights Visualier
 A small PHP web app to help compile Discord Insights CSV exports of visitors and message activity into graphical data - helps geta round their minimal-length data retention for longer analytical views.
 
 ## Usage
